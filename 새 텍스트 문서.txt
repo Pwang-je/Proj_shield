@@ -1,0 +1,15 @@
+create table members(
+
+id varchar(20) primary key,
+
+name varchar(20),
+
+passwd varchar(20),
+
+email varchar(40),
+
+phone varchar(30),
+
+area varchar(20),
+
+job varchar(20)) charset=utf8;
