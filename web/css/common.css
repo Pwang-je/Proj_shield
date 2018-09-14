@@ -32,11 +32,6 @@ body {
 }
 
 
-
-
-
-
-
 /*************************************************
                    SECTION
 **************************************************/
@@ -74,11 +69,29 @@ section {
         height: 100%;
         background-color: yellow;
     }
-        .card-1 {
-            height: 20%;
+        .card-common {
+            height: 60%;
             margin: 2rem 0 0 1.4rem;
+            border-radius: 2rem;
             background-color: cyan;
         }
+            .prof-img {
+                overflow: hidden;
+                display: box;
+                height: 60%;
+                margin: 2rem 0   1rem 0;
+                padding: 0;
+                border-radius: 50%;
+                background-position: center;
+            }
+                .prof-img img {
+                    width: 100%;
+                    background-size: contain;
+                }
+            .prof-article {
+                display: box;
+            }
+
 
 
 

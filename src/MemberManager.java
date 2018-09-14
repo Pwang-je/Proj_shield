@@ -10,10 +10,10 @@ import javax.servlet.http.HttpServletRequest;
 import javax.sql.DataSource;
 
 public class MemberManager {
-	private 	   Connection conn;
-	private PreparedStatement pstate;
-	private 		ResultSet result;
-	private 	   DataSource ds;
+	private   Connection conn;
+	private 	PreparedStatement pstate;
+	private 	ResultSet result;
+	private 	DataSource ds;
 	
 	public MemberManager() {
 		try {
