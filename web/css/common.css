@@ -50,12 +50,49 @@ section {
     height: 100%;
     background-color: blue;
 }
+    .navbar ul {
+        list-style: none;
+        margin-top: 4rem;
+        padding: 0;
+    }
+        .navbar ul li {
+            margin-top: 4rem;
+            text-align: center;
+        }
+        .navbar ul img {
+            width: 180px;    height: 20%;
+        }
+
+
 
 
 .contents {
     height: 100%;
     background-color: lightgreen;
 }
+    .contents #left {
+        height: 100%;
+        background-color: yellow;
+    }
+        .card-1 {
+            height: 20%;
+            margin: 2rem 0 0 1.4rem;
+            background-color: cyan;
+        }
+
+
+
+
+    .contents #right {
+        height: 100%;
+        background-color: black;
+    }
+
+
+
+
+
+
 
 .sit-box {
     height: 100%;
