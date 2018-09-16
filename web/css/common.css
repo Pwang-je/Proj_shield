@@ -69,28 +69,52 @@ section {
         height: 100%;
         background-color: yellow;
     }
+    .contents #center {
+        height: 100%;
+        background-color: yellow;
+    }
         .card-common {
-            height: 60%;
-            margin: 2rem 0 0 1.4rem;
-            border-radius: 2rem;
+            overflow: hidden;
+            width: 23%;     height: 40%;
+            margin: 2rem 0 0 1.6rem;
+            border-radius: 1rem;
             background-color: cyan;
         }
             .prof-img {
                 overflow: hidden;
-                display: box;
-                height: 60%;
-                margin: 2rem 0   1rem 0;
+                width: 80%;     height: 60%;
+                margin: 2rem 0 2rem 1.8rem;
                 padding: 0;
                 border-radius: 50%;
-                background-position: center;
             }
                 .prof-img img {
                     width: 100%;
                     background-size: contain;
                 }
-            .prof-article {
-                display: box;
+            .f-img {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-top: 6rem;
             }
+                .f-img div {
+                    overflow: hidden;
+                    border-radius: 1rem;
+                }
+                    .f-img div img {
+                        border-radius: 1rem;
+                    }
+            .prof-article {
+                height: 10%;
+                padding: 0;
+                text-align: center;
+            }
+            .prof-options {
+                /*padding: 0;*/
+            }
+                .prof-options div {
+                    padding: 0 0 0 1rem;
+                }
 
 
 
@@ -98,9 +122,19 @@ section {
 
     .contents #right {
         height: 100%;
-        background-color: black;
+        background-color: white;
     }
-
+        .right-wrap {
+            overflow: hidden;
+            margin-top: 5rem;
+        }
+        .form-group {
+            width: 100%;
+        }
+            .lb-ctrl {
+                width: 30%;
+                margin: 2rem 4rem 0 0;
+            }
 
 
 
