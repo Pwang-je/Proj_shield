@@ -1,0 +1,52 @@
+@charset "UTF-8";
+
+
+/* 작은 기기들 (태블릿, 768px 이상) */
+@media (min-width: @screen-sm-min) {
+  #shield_video {
+    position: fixed;
+    top: 0%;     left: -30%;
+    margin: 0;  padding: 0;
+    width: auto;    height: auto;
+    min-width: 100%;
+    min-height: 100%;
+
+}
+
+}
+
+/* 중간 기기들 (데스크탑, 992px 이상) */
+@media (min-width: @screen-md-min) {
+
+  #shield_video {
+    position: fixed;
+    top: 0%;     left: -10%;
+    margin: 0;  padding: 0;
+    width: auto;    height: auto;
+    min-width: 100%;
+    min-height: 100%;
+
+}
+
+
+}
+
+/* 큰 기기들 (큰 데스크탑, 1200px 이상) */
+@media (min-width: @screen-lg-min) {
+
+  #shield_video {
+    position: fixed;
+    top: -10%;     left: -20%;
+    margin: 0;  padding: 0;
+    width: auto;    height: auto;
+    min-width: 100%;
+    min-height: 100%;
+
+}
+
+  .form-control {
+    padding: 0;
+  }
+
+
+}
