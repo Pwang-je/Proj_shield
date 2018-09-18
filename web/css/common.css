@@ -106,7 +106,7 @@ section {
 
 
 .contents {
-    height: 100%;
+    /*height: 100%;*/
     /*background-color: lightgreen;*/
 }
     .contents #left {
@@ -121,19 +121,21 @@ section {
         .card-common {
             overflow: hidden;
             width: 23%;     height: 36%;
-            margin: 2rem 0 0 1.6rem;
+            /*margin: 0rem 0 0 1rem;*/
             border-radius: 1rem;
-            background-color: cyan;
+            /*background-color: cyan;*/
+                /*border: 1px solid black;*/
+
         }
             .prof-img {
                 overflow: hidden;
                 width: 80%;     height: 50%;
-                margin: 2rem 0 2rem 1.8rem;
+                margin: 1rem 0 0 2rem;
                 padding: 0;
                 border-radius: 50%;
             }
                 .prof-img img {
-                    width: 100%;    height: 100%;
+                    width: 100%;    height: auto;
                     background-size: contain;
                 }
             .f-img {
@@ -150,7 +152,8 @@ section {
                         border-radius: 1rem;
                     }
             .prof-article {
-                height: 20%;
+                height: 10%;
+                margin: 2rem 0 2rem 0;
                 padding: 0;
                 text-align: center;
             }
@@ -158,39 +161,60 @@ section {
                 /*padding: 0;*/
             }
                 .prof-options div {
-                    padding: 0 0 0 1rem;
+                    padding: 0 0 0 0;
                 }
 
 
-/* Center Example */
+/**
+    dashboard
+**/
 
-.something-1 {
+.contents-maps {
+    overflow: hidden;
     height: 40%;
     margin-top: 4rem;
     border-radius: 1rem;
     background-color: white;
 }
-.something-2 {
-    height: 40%;
-    margin: 2rem 0 0 4.4rem;
-    border-radius: 1rem;
-    background-color: black;
-}
-.something-3 {
+.chart {
     overflow: hidden;
-    height: 20%;
-    margin: 2rem 0 0 5rem;
+    height: 30%;
+    margin: 2rem 0 4rem 0;
     border-radius: 1rem;
-    /*background-color: red;*/
-    background-size: 50% 50%;
-    background-position: center;
+    /*background-color: black;*/
 }
-    .something-3 img {
-        background-size: 50% 50%;
+.chart-1 {
+    overflow: hidden;
+    height: 40%;
+    margin: 2rem 0 4rem 0;
+    border-radius: 1rem;
+}
+.db-main {
+    overflow: hidden;
+    /*padding: 0;*/
+}
+    .db-card {
+        overflow: hidden;
+        height: 20%;
+        margin: 4rem 2rem 0 4rem;
+        padding: 3rem;
+        border-radius: 1rem;
+        text-align: center;
+        background-color: lightgreen;
     }
-    .something-3-2 {
-        background-
-    }
+        .db-card i {
+            margin: 0 2rem 2rem 0;
+        }
+        .db-card p {
+            font-size: 22px;
+        }
+        .db-card span {
+            text-align: center;
+            font-size: 26px;
+        }
+
+
+
 
 
     .contents #right {
@@ -267,10 +291,43 @@ index
     }
 
 
+/**
+    hero_modi
+**/
+.modi-chart-box {
+    margin-top: 4rem;
+}
+.modi-chart-1 {
+    background-color: green;
+    height: 20%;
+    /*margin: 20% 1rem 20% 0;*/
+    padding: 2rem;
+}
+    .modi-chart-1 img,
+    .modi-chart-2 img {
+        position: absolute;
+        top: 0;     left: 0;
+        width: 100%;
+        height: auto;
+    }
+.modi-chart-2 {
+    background-color: lightgreen;
+    height: 20%;
+    /*margin: 20% 6rem 20% 0;*/
+}
 
 
+/**
+    profile
+**/
 
-
-
-
-
+.swiper-wrapper {
+    height: 100%;
+}
+.swiper-slide {
+    /*display: flex;
+    align-items: center;
+    justify-content: center;*/
+      width: 100%;
+    height: 36%;
+    }
