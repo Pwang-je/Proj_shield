@@ -29,16 +29,16 @@ body {
     width: auto;    height: auto;
     min-width: 100%;
     min-height: 100%;
-
+    z-index: -1;
 }
 .container {
     position: relative;
 }
+
 /***
 button
 ***/
-
-@default_color: #ffffff;
+@default_color: #000;
 @primary_color: #3498db;
 @success_color: #2ecc71;
 @info_color: #81cfe0;
@@ -76,10 +76,11 @@ button
 
 
 /*************************************************
-                   SECTION
+                        SECTION
 **************************************************/
 
 section {
+    overflow: hidden;
     width: 100%;    height: 100%;
     background-color: red;
 }
@@ -138,12 +139,6 @@ section {
                     width: 100%;    height: auto;
                     background-size: contain;
                 }
-            .f-img {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                margin-top: 6rem;
-            }
                 .f-img div {
                     overflow: hidden;
                     border-radius: 1rem;
@@ -158,11 +153,20 @@ section {
                 text-align: center;
             }
             .prof-options {
-                /*padding: 0;*/
+                padding: 0;
             }
                 .prof-options div {
                     padding: 0 0 0 0;
                 }
+
+
+/**
+    index
+**/
+.index-btn-ctrl {
+    margin-bottom: 20rem;
+    width: 50%;
+}
 
 
 /**
@@ -217,32 +221,13 @@ section {
 
 
 
-    .contents #right {
-        height: 100%;
-        background-color: white;
-    }
-        .right-wrap {
-            overflow: hidden;
-            margin-top: 5rem;
-        }
-        .form-group {
-            width: 100%;
-        }
-            .lb-ctrl {
-                width: 30%;
-                margin: 2rem 4rem 0 0;
-            }
 
 
 
 
 
 
-.sit-box {
-    height: 100%;
-    border-radius: 1rem;
-    background-color: lightgrey;
-}
+
 
 
 /*************************************************
@@ -253,7 +238,20 @@ section {
     background-color: lightgreen;
     height: 100%;
 }
-
+.sit-box {
+    height: 100%;
+    border-radius: 1rem;
+    background-color: lightgrey;
+}
+    .sit-bubble {
+        margin-bottom: 2rem;
+        border: 1px solid red;
+        border-radius: 1rem;
+    }
+    .sit-icon {
+        padding: 0;
+        margin-top: 1rem;
+    }
 
 
 
@@ -315,7 +313,39 @@ index
     height: 20%;
     /*margin: 20% 6rem 20% 0;*/
 }
-
+    .form-container {
+        margin: 4rem 0 0 0;
+    }
+        .form-control {
+            margin: 0 0 1rem 0;
+        }
+        .lb-ctrl {
+            font-size: 20px;
+            margin-left: 2rem;
+        }
+        .from-group {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+.modi-middle {
+    margin-top: 4rem;
+    padding: 0;
+    background-color: lightgreen;
+}
+.hero-modi-img {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 330px;
+    margin-top: 1rem;
+}
+    .btn-size {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 
 /**
     profile
@@ -325,9 +355,53 @@ index
     height: 100%;
 }
 .swiper-slide {
-    /*display: flex;
-    align-items: center;
-    justify-content: center;*/
-      width: 100%;
-    height: 36%;
+        width: 100%;
+        height: 36%;
     }
+
+
+/**
+    hero_profile
+    **/
+
+.paral-img {
+    height: 400px;
+    margin-bottom: 4rem;
+    background-image: url(../images/hero/large/lg-003cap_com_crd_01.jpg);
+    background-attachment: fixed;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.hero-f-img {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    margin-top: 4rem;
+            }
+.cont-list {
+    margin: 4rem 0 0 8rem;
+    border: 1px solid red;
+}
+    .cont-list div {
+        border: 1px solid blue;
+    }
+    .stat-up {
+        font-size: 18px;
+        font-weight: bold;
+    }
+.desc-char {
+    margin: 4rem 0 0 0;
+}
+.hero-profile-chart {
+    margin-top: 4rem;
+    height: 280px;
+}
+.embed-responsive {
+    height: 830px;
+    margin: 4rem 0 4rem 0;
+}
+
+
