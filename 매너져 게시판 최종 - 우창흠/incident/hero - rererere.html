@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<!--[if IE 7 ]><html class="ie ie7 lte9 lte8 lte7" lang="en-US"><![endif]-->
+<!--[if IE 8]><html class="ie ie8 lte9 lte8" lang="en-US">  <![endif]-->
+<!--[if IE 9]><html class="ie ie9 lte9" lang="en-US"><![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!-->
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>hero</title>
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <link rel="stylesheet" href="../css/common.css">
+</head>
+<body>
+
+<div class="container">
+
+  <div class="col-md-12">
+    <p>** 영웅 선택 페이지 **</p>
+  </div>
+
+  <div class="col-md-12">
+    <form action="hero.jsp" name="frm">
+      <input type = "hidden" id = "type" name = "type">
+      <input type = "hidden" id = "char2" name = "char2" value="<%=char2%>">
+      <input type = "hidden" id = "char1" name = "char1" value="<%=char1%>">
+      <input type="hidden" id = "number" name = "number" value = "<%=number %>">
+
+      <input type="button" class="btn btn-default" onclick="frm.type.value='1'; frm.submit();" value = "추천 영웅 목록">
+      <input type="button" onclick="frm.type.value='2'; frm.submit();" value = "필터 적용 검색">
+      <input type="button" onclick="frm.type.value='3'; frm.submit();" value = "직접 검색">
+    </form>
+  </div>
+
+</div>
+<!-- // .container; -->
+
+
+
+<script src="../js/jquery-3.3.1.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -31,12 +31,14 @@ video {
 /***
 button
 ***/
+/*
 @default_color: #000;
 @primary_color: #3498db;
 @success_color: #2ecc71;
 @info_color: #81cfe0;
 @warning_color: #f39c12;
 @danger_color: #c0392b;
+*/
 
 .btn{
     font-weight: bold;
@@ -439,4 +441,11 @@ index
     background-color: white !important;
 /*    opacity: 0.8;
     filter: alpha(opacity=50);*/
+}
+
+/**
+    board
+**/
+.content-pd {
+    padding: 0;
 }

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<!--[if IE 7 ]><html class="ie ie7 lte9 lte8 lte7" lang="en-US"><![endif]-->
+<!--[if IE 8]><html class="ie ie8 lte9 lte8" lang="en-US">  <![endif]-->
+<!--[if IE 9]><html class="ie ie9 lte9" lang="en-US"><![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!-->
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <link rel="stylesheet" href="../css/materialFormStyles.css">
+  <link rel="stylesheet" href="../css/common.css">
+  <link rel="stylesheet" href="../css/bootstrap-select.min.css">
+</head>
+<body>
+
+
+
+<div class="container">
+<div id="Contents" class="col-md-6 col-md-offset-3" style="border: 1px solid black">
+
+<div class="col-md-6"><h2>사건 신고</h2></div>
+
+<form action="submit.jsp" id="#" class="form col-md-12" role="form" autocomplete="off">
+
+  <div class="col-md-9">
+    <p>글번호 : <%=maxNo %></p>
+  </div>
+
+
+    <div class="col-md-12">
+      <div class="col-md-6">
+        <p>지역선택</p>
+      </div>
+      <div class="col-md-6">
+        <select class="form-control selectpicker" name="area" id="area" onchange="dd()">
+          <option value="none" selected="selected">지역 선택</option>
+          <option value="1">1지역</option>
+          <option value="2">2지역</option>
+          <option value="3">3지역</option>
+          <option value="4">4지역</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="col-md-12">
+      <div class="col-md-6">
+        <p>상황선택</p>
+      </div>
+      <div class="col-md-6">
+        <select class="form-control selectpicker" name = "type" id = "type" onchange="dd()">
+          <option value="none" selected="selected">사건 선택</option>
+          <option value="nature">자연재해</option>
+          <option value="villian">악 당</option>
+        </select>
+      </div>
+    </div>
+
+
+
+
+  <div class="col-md-9">
+    <div id="disp1" style="display: "><h4>지역/상황을 선택하세요</h4></div>
+    <div id="disp2" style="display: none;"><h4>세부 상황</h4></div>
+    <select name="detailtype" id="detailtype">
+      <option value="none" selected="selected">세부 상황을 선택.</option>
+      <option value="asteroid">소행성 충돌</option>
+      <option value="fire">화염피해</option>
+      <option value="pollution">대기오염</option>
+      <option value="flood_storm">홍수</option>
+      <option value="earthquake">지진</option>
+    </select>
+
+    <div id="disp3" style="display: none;">
+      <h4>악당 선택</h4>
+      <label for="villian_name">이름 검색</label>
+      <input type="text" name="villian_name" id="villian_name" value="'검색하기' 버튼을 누르세요" readonly>
+      <input type="button" value="검색하기" name="btnSearch" onclick="villain()">
+    </div>
+  </div>
+
+  <div class="col-md-12">
+    <div class="col-md-4">
+      ID
+    </div>
+    <div class="col-md-8">
+      <%=session.getAttribute("idKey") %>
+      <input type="hidden" name = "id" id = "id" value="<%=session.getAttribute("idKey") %>">
+    </div>
+  </div>
+
+  <div class="col-md-12">
+    <div class="col-md-4">
+      <p>암 호</p>
+    </div>
+    <div class="col-md-8">
+      <input type="password" name="passwd" id="passwd" class="form-control">
+    </div>
+  </div>
+
+  <div class="col-md-12">
+    <div class="col-md-4">
+      <p>글제목</p>
+    </div>
+    <div class="col-md-8">
+      <input type="text" id="title" name="title" class="form-control">
+    </div>
+  </div>
+
+  <div class="col-md-12">
+    <div class="col-md-4">
+      <p>글내용</p>
+    </div>
+    <div class="col-md-8">
+      <textarea name="content" id="content" cols="50" rows="10"  class="form-control"></textarea>
+    </div>
+  </div>
+
+  <div class="col-md-12">
+    <div class="col-md-12 col-md-offset-3">
+      <input type="hidden" id = "no" name = "no" value="<%=maxNo %>">
+      <input type="hidden" id = "unknown" name = "unknown">
+      <input type="button" value="신고목록" class="col-md-3 btn btn-default" onclick="location.href='board.jsp?nowPage=1'">
+      <input type="button" value="접수하기" class="col-md-3 btn btn-default"  onclick="check()">
+    </div>
+  </div>
+
+</form>
+
+
+</div>
+
+</div>
+
+
+
+<script src="../js/jquery-3.3.1.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/materialForm.js"></script>
+<script src="../js/bootstrap-select.min.js"></script>
+<script src="../js/defaults-ko_KR.min.js"></script>
+</body>
+</html>
